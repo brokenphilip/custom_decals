@@ -1,5 +1,5 @@
 # Custom Decals
-A SourceMod plugin for TF2 which allows players to apply custom decals to eligible weapons and cosmetics.
+A SourceMod plugin for TF2 which allows players to apply custom images as decals for eligible weapons and cosmetics. This plugin uses econ data to fetch all eligible items and thus will not need to be updated in case Valve (ever) adds more decal-able items to TF2.
 
 # Requirements
 - [TF2Items](https://forums.alliedmods.net/showthread.php?t=115100)
