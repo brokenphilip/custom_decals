@@ -133,7 +133,7 @@ public Action Cmd_DecalHelp(int client, any args)
 {
 	ReplyToCommand(client, "[SM] Displayed help in the console.");
 
-	PrintToConsole(client, "%s%s%s%s%s%s%s%s%s%s%s",
+	PrintToConsole(client, "%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
 		"==========\n",
 		"1. Get a 128x128 image (same image used for colored decals)\n",
 		"2. Make a TF2 guide and upload the image as an icon (branding image):\n",
@@ -144,6 +144,9 @@ public Action Cmd_DecalHelp(int client, any args)
 		"steamuserimages-a.akamaihd.net/ugc/123456789123456789/...\n",
 		"4. Wait 15-30 seconds then run the command. Example command:\n",
 		"sm_decal 123456789123456789\n",
+		"5. If the decal hasn't changed, check the console for a 'GetUGCDetails failed?' error\n",
+		"Reasons include incorrect UGC ID (mistyped?), incorrect image size, not a TF2 guide,\n",
+		"guide being published, or decal applied too soon\n",
 		"==========");
 
 	return Plugin_Handled;
