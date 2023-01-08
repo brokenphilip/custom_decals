@@ -16,7 +16,7 @@ public Plugin myinfo =
 	author = "brokenphilip",
 	description = "Apply custom decals to weapons/cosmetics",
 	version = VERSION,
-	url = "https://steamcommunity.com/id/brokenphilip"
+	url = "https://github.com/brokenphilip/custom_decals"
 };
 
 public void OnPluginStart()
