@@ -21,4 +21,4 @@ A SourceMod plugin for TF2 which allows players to apply custom images as decals
 4. Wait 15-30 seconds then run the command
    - Example command for the UGC ID above: `sm_decal 123456789123456789`
 5. If the decal hasn't changed, check the console for a `GetUGCDetails failed?` error
-   - Reasons include incorrect image size, not a TF2 guide, guide being published, or decal applied too soon
+   - Reasons include incorrect UGC ID (mistyped?), incorrect image size, not a TF2 guide, guide being published, or decal applied too soon
