@@ -16,7 +16,7 @@ A SourceMod plugin for TF2 which allows players to apply custom images as decals
 2. [Make a TF2 guide](https://steamcommunity.com/sharedfiles/editguide/?appid=440) and upload the image as an icon (branding image)
 3. Save the guide and preview it (WITHOUT publishing it!)
 4. Copy the icon URL. The URL MUST start with `steamuserimages...`
-3. Copy the number after the /ugc/ part, for example:
+3. Copy the number after the /ugc/ part
    - Example: for `steamuserimages-a.akamaihd.net/ugc/123456789123456789/...`, the UGC ID would be `123456789123456789`
 4. Wait 15-30 seconds then run the command
    - Example command for the UGC ID above: `sm_decal 123456789123456789`
