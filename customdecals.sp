@@ -5,7 +5,7 @@
 #include <tf2attributes>
 #include <tf_econ_data>
 
-#define VERSION "1.0"
+#define VERSION "1.1"
 
 ArrayList g_DecalableItems;
 ArrayList g_PlayerItems[33];
@@ -285,14 +285,15 @@ public Action CheckItems(Handle timer, int client)
 		}
 	}
 
-	return Plugin_Stop;
+	return Plugin_Continue;
 }
 
 stock bool IsStrNumeric(char[] buf)
 {
 	for (int i = 0; i < strlen(buf); i++)
 	{
-		if (!IsCharNumeric(buf[i])) return false;
+		if (!IsCharNumeric(buf[i]))
+			return false;
 	}
 	
 	return true;
@@ -313,12 +314,8 @@ stock bool IsValidDecalableItem(int entity)
 		sm.GetValue("item_index", item_idx);
 		
 		if (GetEntProp(entity, Prop_Send, "m_iItemDefinitionIndex") == item_idx)
-			break;
-
-		// not in g_DecalableItems
-		if (i == len-1)
-			return false;
+			return true;
 	}
 
-	return true;
+	return false;
 }
